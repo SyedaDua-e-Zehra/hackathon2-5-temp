@@ -1,3 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
+
+
+
 import Image from "next/image";
 import Navbar from "../components/navbar";
 import GreenHeader from "../components/green-header";
