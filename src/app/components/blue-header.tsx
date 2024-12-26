@@ -14,11 +14,11 @@ export default function BlueHeader() {
         <div className="flex gap-2 items-center">
           <button className="flex items-center gap-1 text-white text-sm">
             <Image src={phone} alt="phone" width={16} height={16} />
-            <span className="font-Montserrat font-semibold">(225) 555-0118</span>
+            <span className="font-Montserrat font-semibold">03333832214</span>
           </button>
           <button className="flex items-center gap-1 text-white text-sm">
             <Image src={mail} alt="mail" width={16} height={16} />
-            <span className="font-Montserrat">michelle.rivera@example.com</span>
+            <span className="font-Montserrat">syedaduaezehrar@gmail.com</span>
           </button>
         </div>
 
