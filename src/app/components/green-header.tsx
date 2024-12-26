@@ -1,30 +1,43 @@
-import Image from "next/image";
-import greenman from "@/images/shop-hero-2-png-picture-1.png";
-export default function GreenDiv(){
-    return(
-        <div className="w-[1440px] rounded-[5px] absolute bg-[#23856D] mt-[-130px] top-[3200px] border">
-            <div className="w-[1440px] h-[709px]">
-             <div className="w-[1440px] h-[709px]">
-                <div className="w-[1036px] h-[711px] absolute left-[209px] py-[112px] flex  gap-[80px]">
-                    <div className="w-[1049px] h-[599px] flex  gap-[30px]">
-                        <div className="w-[509px] h-[432px] pt-[60px] flex flex-col gap-[30px]">
-                            <h4 className="w-[154px] h-[30px] font-Montserrat font-normal text-[20px] leading-[30px] text-white">SUMMER 2020</h4>
-                            <h1 className="w-[509px] h-[160px] font-Montserrat font-bold text-[58px] leading-[80px] text-white">Vita Classic Product</h1>
-                            <p className="w-[341px] h-[40px] font-Montserrat font-medium text-[14px] leading-[20px] text-white">We know how large objects will act, We know how are objects will act, We know</p>
-                            <div className="w-[295px] h-[52px] flex gap-[34px]">
-                                <h3 className="w-[77px] h-[32px] font-Montserrat font-bold text-[24px] leading-[32px] text-white">$16.48</h3>
-                                <button className="w-[184px] h-[52px] rounded-[5px] px-[40px] bg-[#2DC071] py-[15px] flex gap-[10px]">
-                                    <h1 className="w-[104px] h-[22px] font-Montserrat text-[14px] leading-[22px] flex text-white justify-center ">ADD TO CART</h1>
-                                </button>
-                            </div>
-                        </div>
-                        <div className="w-[510px]">
-                          <Image src={greenman} alt="picman"/>
-                        </div>
-                    </div>
-                </div>
-             </div>
-            </div>
+import Image from "next/image"
+import phone from "@/images/icn settings icn-xs.png"
+import mail from "@/images/icn settings icn-xs (1).png";
+import insta from "@/images/icn settings icn-xs (2).png";
+import yout from "@/images/icn settings icn-xs (3).png";
+import fb from "@/images/icn settings icn-xs (4).png";
+import twit from "@/images/icn settings icn-xs (5).png";
+
+export default function GreenHeader() {
+  return (
+    <div className="lg:block hidden w-full h-[58px] bg-[#23856D]">
+      <div className="flex justify-between items-center w-full h-full px-[24px]">
+        {/* Left section: Contact Info */}
+        <div className="flex gap-[10px]">
+          <button className="flex items-center gap-[5px] p-[10px] text-white">
+            <Image src={phone} alt="phone" width={16} height={16} />
+            <span className="font-Montserrat font-semibold text-[14px]"> (225) 555-0118</span>
+          </button>
+          <button className="flex items-center gap-[5px] p-[10px] text-white rounded-[5px]">
+            <Image src={mail} alt="mail" width={16} height={16} />
+            <span className="font-Montserrat text-[14px]">michelle.rivera@example.com</span>
+          </button>
         </div>
-    )
+
+        {/* Center section: Follow Us */}
+        <h6 className="font-Montserrat font-semibold text-[14px] text-white">
+          Follow Us and get a chance to win 80% off
+        </h6>
+
+        {/* Right section: Social Icons */}
+        <div className="flex gap-[10px] items-center">
+          <h6 className="font-Montserrat text-[14px] text-white">Follow Us:</h6>
+          <div className="flex gap-[10px]">
+            <Image src={insta} alt="Instagram" width={16} height={16} />
+            <Image src={yout} alt="YouTube" width={16} height={16} />
+            <Image src={fb} alt="Facebook" width={16} height={16} />
+            <Image src={twit} alt="Twitter" width={16} height={16} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

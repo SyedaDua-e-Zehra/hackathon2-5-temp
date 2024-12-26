@@ -233,18 +233,17 @@ export default function shop () {
             ))}
           </div>
           {/* //Button */}
-          <div
-            className="w-[313px] h-[74px] rounded-[6.73px] border-[1.35px] border-[#BDBDBD]"
-            style={{ boxShadow: "0px 2px 4px 0px #0000001A" }}
-          >
-            <div className="w-[313px] h-[74px]">
-                <span className="w-[84px] border bg-[#F3F3F3] border-[#BDBDBD]">
-                    <h2 className="w-[34px] h-[24px] font-Montserrat font-bold text-[14px] leading-[24px] text-[#BDBDBD]">First</h2>
-                </span>
+         
+            <div className="w-[313px] h-[74px] border-2 flex rounded-md ml-72">
+                <button className="w-[85px] h-[74px] hover:bg-blue-400 py-3 px-3 border-2  bg-[#e6e5e5]"> First</button>
+                <button className="w-[85px] h-[74px] hover:bg-blue-400 py-3 px-3 border-2 " > 1</button>
+                <button className="w-[85px] h-[74px] hover:bg-blue-400 py-3 px-3 border-2">2</button>
+                <button className="w-[85px] h-[74px] hover:bg-blue-400 py-3 px-3 border-2">3</button>
+                <button className="w-[85px] h-[74px] hover:bg-blue-400 py-3 px-3 border-2">   Next</button>
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 }

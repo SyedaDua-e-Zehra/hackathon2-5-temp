@@ -3,7 +3,7 @@ import women from "@/images/hero1.jpg";
 
 export default function Carousel() {
   return (
-    <div className="relative w-[1439px] h-[716px] md:h-[80vh] lg:h-[716px] top-[136px] left-[1px] rounded-[5px] border-[1px]">
+    <div className="relative w-full md:w-[1439px] h-[50vh] md:h-[80vh] lg:h-[716px] top-[136px] left-[1px] rounded-[5px] border-[1px]">
       {/* Background Image */}
       <div className="w-full h-full">
         <Image

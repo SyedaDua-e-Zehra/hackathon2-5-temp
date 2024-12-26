@@ -7,11 +7,11 @@ import Lastdiv from "./components/lastdiv";
 import Navbar from "./components/navbar";
 import ProductCard from "./components/products-card";
 import Whitediv from "./components/white-dic";
-import Footer from "./components/Footer";
+import Footer1 from "./components/footer1";
 
 export default function Home(){
   return(
-    <div>
+    <div className="overflow-hidden">
       <BlueHeader/>
       <Navbar/>
       <Carausel/>
@@ -20,8 +20,7 @@ export default function Home(){
       <GreenDiv/>
       <Whitediv/>
       <Lastdiv/>
-      <br/>
-      <Footer/>
+      <Footer1/>
            
     </div>
   )
